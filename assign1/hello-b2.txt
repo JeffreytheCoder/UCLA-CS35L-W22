@@ -1,0 +1,2 @@
+stdin: Bad file descriptor
+make: *** [makefile:4: run] Error 1
