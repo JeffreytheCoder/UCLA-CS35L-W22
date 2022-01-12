@@ -1,0 +1,207 @@
+1.mv is located at /user/bin/mv and /usr/local/cs/bin/mv
+sh is located at /usr/bin/sh
+
+2.
+/usr/bin/ar
+/usr/bin/pr
+/usr/bin/tr
+/usr/local/cs/bin/pr
+/usr/local/cs/bin/tr
+
+ar: maintains groups of files as a single archive file
+pr: paginate or columnate computer files for printing
+tr: replace or remove specific characters in its input data set
+*referenced from wikipedia
+
+3.
+/usr/local/cs/emacs-27.2/bin/emacs-27.2
+
+4.
+the version of /usr/bin/gcc is 8.5.0
+the version of plain gcc is 8.5.0
+
+5.
+chmod u+sx gives the user execution permission of the file. When the user executes the file, he gets the permission as the owner of the file.
+chmod o-w removes write permission of the file from other users
+
+6.
+ocal/cs/coreutils-9.0/share/locale/da
+/usr/local/cs/coreutils-9.0/share/locale/da/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/da/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/de
+/usr/local/cs/coreutils-9.0/share/locale/de/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/de/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/el
+/usr/local/cs/coreutils-9.0/share/locale/el/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/el/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/eo
+/usr/local/cs/coreutils-9.0/share/locale/eo/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/eo/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/es
+/usr/local/cs/coreutils-9.0/share/locale/es/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/es/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/et
+/usr/local/cs/coreutils-9.0/share/locale/et/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/et/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/eu
+/usr/local/cs/coreutils-9.0/share/locale/eu/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/eu/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/fi
+/usr/local/cs/coreutils-9.0/share/locale/fi/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/fi/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/fr
+/usr/local/cs/coreutils-9.0/share/locale/fr/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/fr/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ga
+/usr/local/cs/coreutils-9.0/share/locale/ga/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ga/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/gl
+/usr/local/cs/coreutils-9.0/share/locale/gl/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/gl/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/hr
+/usr/local/cs/coreutils-9.0/share/locale/hr/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/hr/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/hu
+/usr/local/cs/coreutils-9.0/share/locale/hu/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/hu/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ia
+/usr/local/cs/coreutils-9.0/share/locale/ia/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ia/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/id
+/usr/local/cs/coreutils-9.0/share/locale/id/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/id/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/it
+/usr/local/cs/coreutils-9.0/share/locale/it/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/it/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ja
+/usr/local/cs/coreutils-9.0/share/locale/ja/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ja/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/kk
+/usr/local/cs/coreutils-9.0/share/locale/kk/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/kk/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ko
+/usr/local/cs/coreutils-9.0/share/locale/ko/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ko/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/lg
+/usr/local/cs/coreutils-9.0/share/locale/lg/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/lg/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/lt
+/usr/local/cs/coreutils-9.0/share/locale/lt/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/lt/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ms
+/usr/local/cs/coreutils-9.0/share/locale/ms/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ms/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/nb
+/usr/local/cs/coreutils-9.0/share/locale/nb/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/nb/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/nl
+/usr/local/cs/coreutils-9.0/share/locale/nl/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/nl/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/pl
+/usr/local/cs/coreutils-9.0/share/locale/pl/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/pl/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/pt
+/usr/local/cs/coreutils-9.0/share/locale/pt/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/pt/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/pt_BR
+/usr/local/cs/coreutils-9.0/share/locale/pt_BR/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/pt_BR/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ro
+/usr/local/cs/coreutils-9.0/share/locale/ro/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ro/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/ru
+/usr/local/cs/coreutils-9.0/share/locale/ru/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/ru/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/sk
+/usr/local/cs/coreutils-9.0/share/locale/sk/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/sk/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/sl
+/usr/local/cs/coreutils-9.0/share/locale/sl/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/sl/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/sr
+/usr/local/cs/coreutils-9.0/share/locale/sr/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/sr/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/sv
+/usr/local/cs/coreutils-9.0/share/locale/sv/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/sv/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/tr
+/usr/local/cs/coreutils-9.0/share/locale/tr/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/tr/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/uk
+/usr/local/cs/coreutils-9.0/share/locale/uk/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/uk/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/vi
+/usr/local/cs/coreutils-9.0/share/locale/vi/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/vi/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/zh_CN
+/usr/local/cs/coreutils-9.0/share/locale/zh_CN/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/zh_CN/LC_TIME
+/usr/local/cs/coreutils-9.0/share/locale/zh_TW
+/usr/local/cs/coreutils-9.0/share/locale/zh_TW/LC_MESSAGES
+/usr/local/cs/coreutils-9.0/share/locale/zh_TW/LC_TIME
+/usr/local/cs/coreutils-9.0/share/info
+/usr/local/cs/coreutils-9.0/share/man
+/usr/local/cs/coreutils-9.0/share/man/man1
+/usr/local/cs/coreutils-9.0/libexec
+/usr/local/cs/coreutils-9.0/libexec/coreutils
+/usr/local/cs/coreutils-9.0/bin
+/usr/local/cs/bin
+/usr/local/cs/bin/.del
+/usr/local/cs/bash-5.1.12
+/usr/local/cs/bash-5.1.12/bin
+/usr/local/cs/bash-5.1.12/share
+/usr/local/cs/bash-5.1.12/share/man
+/usr/local/cs/bash-5.1.12/share/man/man1
+/usr/local/cs/bash-5.1.12/share/info
+/usr/local/cs/bash-5.1.12/share/doc
+/usr/local/cs/bash-5.1.12/share/doc/bash
+/usr/local/cs/bash-5.1.12/lib
+/usr/local/cs/bash-5.1.12/lib/bash
+/usr/local/cs/bash-5.1.12/lib/pkgconfig
+/usr/local/cs/bash-5.1.12/include
+/usr/local/cs/bash-5.1.12/include/bash
+/usr/local/cs/bash-5.1.12/include/bash/builtins
+/usr/local/cs/bash-5.1.12/include/bash/include
+/usr/local/cs/ocaml-4.13.1
+/usr/local/cs/ocaml-4.13.1/bin
+/usr/local/cs/ocaml-4.13.1/lib
+/usr/local/cs/ocaml-4.13.1/lib/ocaml
+/usr/local/cs/ocaml-4.13.1/lib/ocaml/stublibs
+/usr/local/cs/ocaml-4.13.1/lib/ocaml/compiler-libs
+/usr/local/cs/ocaml-4.13.1/lib/ocaml/caml
+/usr/local/cs/ocaml-4.13.1/lib/ocaml/threads
+/usr/local/cs/ocaml-4.13.1/lib/ocaml/ocamldoc
+/usr/local/cs/ocaml-4.13.1/man
+/usr/local/cs/ocaml-4.13.1/man/man1
+/usr/local/cs/ocaml-4.13.1/man/man3
+/usr/local/cs/share/info
+/usr/local/cs/share/man/man1
+/usr/local/cs/share/man/man3
+/usr/local/cs/src/coreutils
+/usr/local/cs/src/coreutils/RCS
+/usr/local/cs/src/ocaml
+/usr/local/cs/src/ocaml/RCS~
+
+There are 154 symbolic links
+
+8.
+libbz2.so.1
+
+9.
+C-t: transpose-chars
+ESC t: transpose-words
+C-x C-t: transpose lines
+
+10.
+yank reinserts the last killed text
+
+11. the dired command includes current and parent directories as . and .., whereas the ls command doesn't
+
+12.
+zepeng    992112       1  0 17:39 ?        00:00:00 /usr/lib/systemd/systemd --user
+zepeng    992116  992112  0 17:39 ?        00:00:00 (sd-pam)
+zepeng    992122  992112  0 17:39 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target
+zepeng    992123  992106  0 17:39 ?        00:00:00 sshd: zepeng@pts/23
+zepeng    992126  992123  0 17:39 pts/23   00:00:00 -bash
+zepeng    992233  992112  0 17:39 ?        00:00:00 /usr/bin/dbus-daemon --session --address=system
+zepeng    993968  992126  0 17:58 pts/23   00:00:00 ps -ef
