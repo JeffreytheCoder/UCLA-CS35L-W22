@@ -1,7 +1,11 @@
-1.mv is located at /user/bin/mv and /usr/local/cs/bin/mv
+1.
+which mv
+mv is located at /user/bin/mv and /usr/local/cs/bin/mv
+which sh
 sh is located at /usr/bin/sh
 
 2.
+find /usr/bin -executable -name ?r
 /usr/bin/ar
 /usr/bin/pr
 /usr/bin/tr
@@ -14,17 +18,23 @@ tr: replace or remove specific characters in its input data set
 *referenced from wikipedia
 
 3.
+which emacs
+realpath /usr/local/cs/bin/emacs
 /usr/local/cs/emacs-27.2/bin/emacs-27.2
 
 4.
+/usr/bin/gcc -v
+gcc -v
 the version of /usr/bin/gcc is 8.5.0
 the version of plain gcc is 8.5.0
 
 5.
+man chmod
 chmod u+sx gives the user execution permission of the file. When the user executes the file, he gets the permission as the owner of the file.
 chmod o-w removes write permission of the file from other users
 
 6.
+find /usr/local/cs -type d -mtime -28
 ocal/cs/coreutils-9.0/share/locale/da
 /usr/local/cs/coreutils-9.0/share/locale/da/LC_MESSAGES
 /usr/local/cs/coreutils-9.0/share/locale/da/LC_TIME
@@ -182,22 +192,32 @@ ocal/cs/coreutils-9.0/share/locale/da
 /usr/local/cs/src/ocaml
 /usr/local/cs/src/ocaml/RCS~
 
+7.
+find -l /usr/bin
 There are 154 symbolic links
 
 8.
+ls /usr/lib64 -lt
 libbz2.so.1
 
 9.
+C-h a transpose
+C-x o
 C-t: transpose-chars
 ESC t: transpose-words
 C-x C-t: transpose lines
 
 10.
+C-h a yank
 yank reinserts the last killed text
 
-11. the dired command includes current and parent directories as . and .., whereas the ls command doesn't
+11.
+C-x d /usr/bin
+ls -l /usr/bin
+the dired command includes current and parent directories as . and .., whereas the ls command doesn't
 
 12.
+ps -ef
 zepeng    992112       1  0 17:39 ?        00:00:00 /usr/lib/systemd/systemd --user
 zepeng    992116  992112  0 17:39 ?        00:00:00 (sd-pam)
 zepeng    992122  992112  0 17:39 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target
