@@ -1,0 +1,70 @@
+--- How I build this component ---
+
+There are three states I create with useState hook:
+1. winner: str, stores winner as X or O, initialized as empty string
+2. blocks: str[9], 
+     stores value in each block as X or O, initialized as empty string
+3. isNextX: boolean, 
+     stores whether the next step is taken by X, initialized as X
+4. steps: int, stores how many steps have been taken, initialized as 0
+5. selected: int, 
+     stores index of the block which have been selected, initialized as -1
+6. notice: str, stores useful notice for the player to take the next step
+
+I created two functions:
+1. getWinner(blocks): iterates lines (horizontal, vertical, diagonal), 
+     check if blocks with index on that line have the same value,
+     If so, return the value of the blocks, else return null.
+2. getAvailableMoves(i): switch case indices from 0 to 8
+     return int[]: indices that the block with the input index can move to
+3. handleClick(i): after a block with the input index is clicked,
+     there are several cases to handle the click:
+   a. winner exists: return directly
+   b. deselect: if selected is the input index
+        set select to -1
+   c. move: if selected is not -1
+        if the block with the input index has been filled, give notice
+	else, if the input index is in avaliable moves of the selected block,
+	      if the current player has a sign at the center,
+           and the selected block is not at center,
+           and the player cannot win the game with this move, 
+           (call getWinner(newBlocks) 
+           where newBlocks are blocks after player makes the supposed move)
+           give notice,
+	      else, update blocks with newBlocks, set selected to -1, 
+           reverse isNextX, and increment steps,
+   d. select: if steps >= 6
+        if the selected block is the current player's sign,
+        set selected to be the input index.
+   e. place: steps < 6
+        if the block with the input index has been filled, give notice.
+	else, update blocks, reverse isNextX, and increment steps
+
+I created two useEffect hooks:
+1. dependent on steps: if step changes, call getWinner()
+2. dependent on winner: if winner exists, set notice to be congragulation.
+
+Here is how I render the component:
+1. instruction text: value is the notice
+2. board: Within the 3-column grid div, map out blocks with key as its index,
+     attach onClick with handleClick(index), set text value as blocks[index]
+     If selected is its index, bold its border
+3. restart button: If winner exists, display the button. 
+     If the button is cliked, set all states to their initial value
+
+
+--- How to play ---
+Within 6 steps (inclusive):
+Click on an empty block on the board,
+to fill in an X or O based on your player (X first)
+
+After 6 steps
+Select an existing X or O based on your player, 
+and select an adjacent empty block to move it. 
+If you have a sign at the center, you must make a move to win the game, 
+or move the center sign.
+If you want to deselect the current selection and select another one, 
+click the current selected block again to deselect.
+
+If you have any concerns, follow the instruction above the board in each step.
+Happy gaming XD

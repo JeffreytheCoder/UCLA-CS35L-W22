@@ -1,0 +1,23 @@
+1. expression to compute 7^(5^4)
+(expt 7 (expt 5 4))
+
+2. expression to determine how many bits to store 7^(5^4)
+(hint: consider using `log` to simplify your computation)
+(+ (truncate (log (expt 7 (expt 5 4)) 2)) 1)
+It takes 61 bits to store 7^(5^4)
+
+3. C-h k C-h k describe what happens and why
+It describes the key "C-h k" on how it can be used to describe keys
+
+4. C-h k M-SPC describe what happens and why, how M-SPC works
+It describe how "M-SPC" can be used to insert just one space
+
+5. the general way to do M-SPC (what’s that general function)
+M-x cycle-spacing
+
+Optional
+1. What happens when this script is invoked on an empty file like /dev/null, and why?
+It outputs nothing since the file is empty
+
+2. What happens when this script is invoked with Python 3 rather than Python 2, and why? (You can run Python 3 on the SEASnet hosts by using the command python3 instead of python2.)
+It reports syntax error on match case since it's only avaliable after Python3.10

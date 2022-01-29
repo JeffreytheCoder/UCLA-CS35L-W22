@@ -1,0 +1,25 @@
+There are three states I create with useState hook:
+1. winner: str, stores winner as X or O, initialized as empty string
+2. blocks: str[9], 
+      stores value in each block as X or O, initialized as empty string
+3. isNextX: boolean, 
+      stores whether the next step is taken by X, initialized as X
+
+I created two functions:
+1. getWinner(): iterates lines (horizontal, vertical, diagonal),
+      check if blocks with index on that line have the same value.
+      If so, set winner to the value of the blocks
+2. handleClick(index): handles when a block with given index is clicked.
+      If winner exists or the block already contains a value, return directly.
+      If not, update blocks based on isNextX, 
+      set isNextX as reversed previous value, and call getWinner.
+
+Here is how I render the component:
+1. instruction text: If no winner, 
+      display next player is X or O based on isNextX. 
+      If winner exists, display winner
+2. board: Within the 3-column grid div, map out blocks with key as its index, 
+      attach onClick with handleClick(index),
+      and set value in a span as blocks[index]
+3. restart button: If winner exists, display the button. 
+      If the button is cliked, set all three states to their initial value
