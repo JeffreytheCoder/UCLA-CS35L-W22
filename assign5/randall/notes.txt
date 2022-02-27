@@ -1,0 +1,65 @@
+Jeffrey Yu 305587107
+
+1. Divide randall.c into different files
+  Divide randall.c into different files
+  rand64-hw.c: cpuid, rdrand_supported, {init, rand64, fini} for hardware
+  rand64-sw.c: {init, rand64, fini} for software
+  options.c: empty for now
+  options.c empty for now
+  rand64.c: main function
+
+  Every c file comes with a header file, except rand64.c
+  Change static functions in rand64-hw and rand64-sw to non-static 
+  so that they can be used in rand64.c
+
+2. Add file and mrand48_r input
+  In rand64-sw.c, add source string variable and setFile function which sets source to input file
+  If source is not avaliable, take /dev/random as default
+
+  Add mrand48_r.c and header which returns a random int using GNU function
+
+3. Add options.c
+  Create options struct in header, containing 
+    a. input (parameter after -i)
+    b. source (file if input is /f)
+    c. byteSize (parameter after -o)
+
+  In options.c, create checkArgs function that checks if options follow the rules, 
+  and modifies input options struct and byteCount
+
+4. Add output.c
+  Create writeBytes that outputs each byte in byteCount times
+
+5. Modify randall.c
+  Get options struct and byteCount by checkArgs, and print error if checkArgs gives option error
+  Set {init, rand64, fini} based on options struct
+
+  If -o, output by allocating a buffer of byteSize, 
+  put byteSize of bytes into buffer, and write buffer
+  Else, output by writeBytes
+
+6. Modify makefile
+  Since randall.c is divided into different c files, 
+  change from randall: randall.c to randall: *.c
+
+  Create submission-tarball rule that contains all .c and .h files, make and test files
+  Create repository-tarball rule that also contains .git
+  Create check rule that runs test file
+
+time ./randall 133562368 >/dev/null:
+
+real    0m1.310s
+user    0m1.284s
+sys     0m0.017s
+
+time ./randall 133562368 | cat >/dev/null:
+
+real    0m1.316s
+user    0m1.199s
+sys     0m0.276s
+
+time ./randall 133562368 >rand.data:
+
+real    0m1.713s
+user    0m1.036s
+sys     0m0.294s

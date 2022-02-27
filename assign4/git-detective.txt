@@ -1,0 +1,25 @@
+1. find code in v2.33.1 release that is related to diff --relative
+command:
+git diff v2.33.1..v2.33.0 | grep "diff -relative"
+output:
+- * "git diff --relative" segfaulted and/or produced incorrect result
+-test_expect_success 'setup diff --relative unmerged' '
+-test_expect_success 'diff --relative without change in subdir' '
+-       git -C subdir diff --relative >out &&
+-       git -C subdir diff --relative --name-only >out &&
+-test_expect_success 'diff --relative --name-only with change in subdir' '
+-       git -C subdir diff --relative --name-only >out &&
+-test_expect_failure 'diff --relative with change in subdir' '
+-       git -C subdir diff --relative >out &&
+
+2. find file and line in the repository that contains the code above
+command:
+grep -rnw . -e 'setup diff --relative unmerged'
+output:
+./t/t4045-diff-relative.sh:165:test_expect_success 'setup diff --relative unmerged' '
+
+3. find commit and contributor of this line
+command:
+git blame -L 165 ./t/t4045-diff-relative.sh
+output:
+8174627b3d3 (Đoàn Trần Công Danh 2021-08-22 15:49:08 +0700 165) test_expect_success 'setup diff --relative unmerged' '

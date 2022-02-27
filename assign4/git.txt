@@ -1,0 +1,27 @@
+Use git branch --list --all get all local and remote branches
+
+cloned git
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/main
+  remotes/origin/maint
+  remotes/origin/master
+  remotes/origin/next
+  remotes/origin/seen
+  remotes/origin/todo
+
+~eggert/src/github/git
+  maint
+* master
+  next
+  seen
+  todo
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/main
+  remotes/origin/maint
+  remotes/origin/master
+  remotes/origin/next
+  remotes/origin/seen
+  remotes/origin/todo
+
+eggert's repo has more local branches: maint, next, seen, todo

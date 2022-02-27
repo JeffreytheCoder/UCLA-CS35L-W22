@@ -1,0 +1,41 @@
+git log -S "Even newspaper reports present contradictory information"
+output: 
+commit c12b432741eed9a422fbf99fa27af6e7a941d88b
+Author: Arthur David Olson <ado@elsie>
+Date:   Thu Dec 21 11:43:42 1995 -0500
+
+    Eggert changes
+    
+    SCCS-file: northamerica
+    SCCS-SID: 7.20
+
+git show c12b432741eed9a422fbf99fa27af6e7a941d88b
+output:
+commit c12b432741eed9a422fbf99fa27af6e7a941d88b
+Author: Arthur David Olson <ado@elsie>
+Date:   Thu Dec 21 11:43:42 1995 -0500
+
+    Eggert changes
+    
+    SCCS-file: northamerica
+    SCCS-SID: 7.20
+
+diff --git a/northamerica b/northamerica
+index 92b55af3..9b8a5ec8 100644
+--- a/northamerica
++++ b/northamerica
+
+...
+
++# From Paul Eggert (1995-12-19):
++# Indiana generally observes either EST all year, or CST/CDT,
++# but areas near Cincinnati and Louisville use those cities' timekeeping
++# and in 1969 and 1970 the whole state observed daylight time;
++# and there are other exceptions as noted below.
++# Shanks partitions Indiana into 345 regions, each with its own time history,
++# and writes ``Even newspaper reports present contradictory information.''
++# America/Louisville, or America/New_York.
+
+...
+
+Therefore, the line was added by Arthur David Olson in commit c12b432741eed9a422fbf99fa27af6e7a941d88b
